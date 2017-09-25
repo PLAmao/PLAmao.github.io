@@ -2,6 +2,7 @@
 @import './zxx.scss';
 $main-width: 1285px;
 $col-main: #3BA86F;
+$col-assist: #F0F5FF;
 .main {
     width: $main-width;
     margin: 0 auto;
@@ -232,7 +233,8 @@ $col-main: #3BA86F;
     }
 }
 .area2 {
-    .content-item {
+    .content-item,
+    .content-item:nth-of-type(3):hover {
         display: inline-block;
         position: relative;
         width: 295px;
@@ -240,8 +242,28 @@ $col-main: #3BA86F;
         box-sizing: border-box;
         background-color: #F2F2F2;
         padding-top: 195px;
+        background-image: none;
         &:nth-of-type(n+2) {
             margin-left: 20px;
+        }
+    }
+    .content-item:nth-of-type(3):hover {
+        h3 {
+            color: #555;
+        }
+        p {
+            color: #888;
+        }
+        p:nth-of-type(n+2) {
+            &::before {
+                border-color: #ccc;
+            }
+        }
+        i {
+            background-image: url('../images/10-1.png');
+        }
+        a {
+            color: $col-main;
         }
     }
     h3 {
@@ -355,14 +377,30 @@ $col-main: #3BA86F;
         display: inline-block;
         width: 184px;
         height: 184px;
-        background-color: #f2f2f2;
+        // background-color: #f2f2f2;
         transform: rotateZ(45deg);
         position: relative;
-        &:hover {
+        &:nth-of-type(2n+1) {
+            background-color: $col-assist;
+        }
+        &:nth-of-type(2n) {
+            background-color: #f2f2f2;
+        }
+        &:hover,
+        &.active {
             background-color: $col-main;
             p,
             h3 {
                 color: #fff;
+            }
+        }
+        &.active:hover{
+            background-color: $col-assist;
+            h3 {
+                color: #555;
+            }
+            p {
+                color: #888;
             }
         }
         &:nth-of-type(-n+3) {
@@ -478,8 +516,15 @@ $col-main: #3BA86F;
             color: $col-main;
             text-align: center;
             line-height: 36px;
+            transition: all .2s;
+        }
+        a:hover {
+            color: #fff;
+            background-color: $col-main;
+            border-color: $col-main;
         }
     }
+    
     .swiper-button-black {
         opacity: .2;
     }
@@ -541,6 +586,17 @@ $col-main: #3BA86F;
         &.pd_lg {
             padding-left: 163px;
             padding-right: 145px;
+        }
+    }
+    .card:hover {
+        background-color: $col-main;
+        h3,
+        p {
+            color: #fff;
+        }
+        span {
+            background-color: #fff;
+            color: $col-main;
         }
     }
 }
@@ -606,6 +662,10 @@ $col-main: #3BA86F;
     margin-top: 40px;
     img {
         vertical-align: top;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 .footer_top {
@@ -627,8 +687,13 @@ $col-main: #3BA86F;
         line-height: 36px;
         color: #fff;
         box-sizing: border-box;
-        border: 1px solid #fff;
+        border: 1px solid #47CC87;
         text-align: center;
+        transition: all .2s;
+        &:hover {
+            background-color: #fff;
+            color: $col-main;
+        }
     }
     ul {
         padding-left: 20px;
