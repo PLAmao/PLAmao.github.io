@@ -1133,6 +1133,7 @@ div.dib {
   display: inline-block;
   width: 184px;
   height: 184px;
+  transition: all .2s;
   transform: rotateZ(45deg);
   position: relative;
 }
