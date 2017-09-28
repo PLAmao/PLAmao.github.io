@@ -934,7 +934,7 @@ div.dib {
 }
 
 .area1 .content > div:nth-of-type(2) {
-  background-image: url("../images/05.png");
+  background-image: url("../images/05.jpg");
   padding-left: 36px;
   padding-right: 172px;
 }
@@ -946,13 +946,13 @@ div.dib {
 }
 
 .area1 .content > div:nth-of-type(5) {
-  background-image: url("../images/06.png");
+  background-image: url("../images/06.jpg");
   padding-left: 255px;
   padding-right: 58px;
 }
 
 .area1 .content > div:nth-of-type(6) {
-  background-image: url("../images/07.png");
+  background-image: url("../images/07.jpg");
   padding-left: 36px;
   padding-right: 172px;
 }
@@ -1074,7 +1074,7 @@ div.dib {
 }
 
 .area2 .content-item:nth-of-type(3) {
-  background-image: url("../images/10-2.png");
+  background-image: url("../images/10-2.jpg");
 }
 
 .area2 .content-item:nth-of-type(3) i {
@@ -1110,7 +1110,7 @@ div.dib {
 }
 
 .area2 .content-item:hover:nth-of-type(1) {
-  background-image: url("../images/08-2.png");
+  background-image: url("../images/08-2.jpg");
 }
 
 .area2 .content-item:hover:nth-of-type(1) i {
@@ -1118,7 +1118,7 @@ div.dib {
 }
 
 .area2 .content-item:hover:nth-of-type(2) {
-  background-image: url("../images/09-2.png");
+  background-image: url("../images/09-2.jpg");
 }
 
 .area2 .content-item:hover:nth-of-type(2) i {
@@ -1126,7 +1126,7 @@ div.dib {
 }
 
 .area2 .content-item:hover:nth-of-type(4) {
-  background-image: url("../images/11-2.png");
+  background-image: url("../images/11-2.jpg");
 }
 
 .area2 .content-item:hover:nth-of-type(4) i {
@@ -1254,7 +1254,7 @@ div.dib {
 
 .slide {
   height: 300px;
-  background: url("../images/16-1.png") no-repeat;
+  background: url("../images/16-1.jpg") no-repeat;
   background-size: cover;
   margin-bottom: 80px;
   padding: 48px 63px;
